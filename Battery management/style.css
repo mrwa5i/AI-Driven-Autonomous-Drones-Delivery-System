@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #020024, #090979, #00d4ff);
+    gap: 10px;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons button {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background: linear-gradient(90deg, #e100ff, #7f00ff);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-group button:hover {
+    background: linear-gradient(90deg, #e100ff, #7f00ff);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.contact-btn {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(90deg, #e100ff, #7f00ff);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e100ff;
+}

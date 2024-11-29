@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package Form | AI-Driven Autonomous Drone Delivery System</title>
+    <link rel="stylesheet" href="/Static/package_styles.css" />
+</head>
+<body>
+    <header class="company-header">
+        <h1>AI-Driven Autonomous Drone Delivery System</h1>
+        <nav class="nav-buttons">
+            <a href="./package_form.html"></a><button>Home</button> </a>
+            <a href="/"><button >About</button> </a>
+            <a href="/Login/Template/login.html"><button>Logout</button> </a>
+        </nav>
+    </header>
+    <div class="cards">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-header">
+                <h3>Enter Package Details</h3>
+            </div>
+            <form action="/submit-package" method="POST">
+                <div class="input-group">
+                    <label for="package_name">Package Name</label>
+                    <input type="text" id="package_name" name="package_name" required />
+                </div>
+                <div class="input-group">
+                    <label for="delivery_address">Delivery Address</label>
+                    <input type="text" id="delivery_address" name="delivery_address" required />
+                </div>
+                <div class="input-group">
+                    <label for="recipient_name">Recipient Name</label>
+                    <input type="text" id="recipient_name" name="recipient_name" required />
+                </div>
+                <div class="input-group">
+                    <label for="contact_number">Contact Number</label>
+                    <input type="text" id="contact_number" name="contact_number" required />
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" name="weight" required />
+                </div>
+                <div class="input-group">
+                    <button type="submit">Submit Package</button>
+                </div>
+            </form>
+
+            <hr />
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-header">
+                <h3>Check Existing Package Details</h3>
+            </div>
+            <form action="/package-detail" method="POST">
+                <div class="input-group">
+                    <label for="package_id">Package ID</label>
+                    <input type="text" id="package_id" name="package_id" required />
+                </div>
+                <div class="input-group">
+                    <button type="submit">Check Details</button>
+                </div>
+            </form>
+        </div>
+        <hr />
+        <div class="card-header">
+            <h3>Additional Actions</h3>
+        </div>
+                    <form action="/monitor-status" method="POST">
+                        <div class="input-group">
+                            <label for="status_package_id">Monitor Package Status</label>
+                            <input
+                                type="text"
+                                id="status_package_id"
+                                name="package_id"
+                                placeholder="Enter Package ID"
+                                required
+                            />
+                        </div>
+                        <div class="input-group">
+                            <button type="submit">Monitor Status</button>
+                        </div>
+                    </form>
+    </div>
+    </div>
+    <div class="contact-container">
+        <button class="contact-btn">CONTACT US</button>
+        <div class="contact-info">
+            <p><strong>Phone Number:</strong> +923708090184</p>
+            <p><strong>Our Email:</strong> <a href="washi51214@gmail.com" target="_blank">washi51214</a></p>
+        </div>
+    </div>
+</body>
+</html>

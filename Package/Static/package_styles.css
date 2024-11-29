@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #020024, #090979, #00d4ff);
+    gap:10px
+}
+.company-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+.nav-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.nav-buttons button {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background: linear-gradient(90deg, #e100ff, #7f00ff);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-header h3{
+    text-align: center;
+    color: #fff;
+    background-color: #005f73;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    size: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select, .input-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group button {
+    background-color: #005f73;
+    color: white;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #34a7be;
+}
+
+h3, h4 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 20px 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.contact-btn {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(90deg, #e100ff, #7f00ff);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e100ff;
+}

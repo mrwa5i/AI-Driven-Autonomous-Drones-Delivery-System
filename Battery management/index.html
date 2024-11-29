@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Management | AI-Driven Autonomous Drone Delivery System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="company-header">
+        <h1>AI-Driven Autonomous Drone Delivery System</h1>
+        <nav class="nav-buttons">
+            <a href="./battery_management.html"><button>Home</button></a>
+            <a href="/"><button>About</button></a>
+            <a href="/Login/Template/login.html"><button>Logout</button></a>
+        </nav>
+    </header>
+    <div class="cards">
+        <!-- Form to enter battery details -->
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3>Enter Battery Details</h3>
+                </div>
+                <form action="/submit-battery-details" method="POST">
+                    <div class="input-group">
+                        <label for="charge_level">Charge Level (%)</label>
+                        <input type="number" id="charge_level" name="charge_level" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="temperature">Temperature (°C)</label>
+                        <input type="number" id="temperature" name="temperature" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="voltage">Voltage (V)</label>
+                        <input type="number" id="voltage" name="voltage" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit">Submit Details</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Use Case Options -->
+        <div class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3>Battery Optimization Use Cases</h3>
+                </div>
+                <!-- Use Case: Monitor Battery Health -->
+                <form action="/monitor-battery-health" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Monitor Battery Health</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Battery Charging Management -->
+                <form action="/charging-management" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Battery Charging Management</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Predictive Battery Replacement -->
+                <form action="/predictive-replacement" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Predictive Battery Replacement</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Low Battery Alert -->
+                <form action="/low-battery-alert" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Low Battery Alert</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Flight Path Optimization -->
+                <form action="/path-optimization" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Flight Path Optimization</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Remote Battery Monitoring -->
+                <form action="/remote-monitoring" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Remote Battery Monitoring</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Battery Cooling System -->
+                <form action="/cooling-system" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Battery Cooling System</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Emergency Battery Landing -->
+                <form action="/emergency-landing" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Emergency Battery Landing</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Battery Life Estimation -->
+                <form action="/life-estimation" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Battery Life Estimation</button>
+                    </div>
+                </form>
+
+                <!-- Use Case: Landing Zone Identification -->
+                <form action="/landing-zone-identification" method="POST">
+                    <div class="input-group">
+                        <button type="submit">Landing Zone Identification</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <button class="contact-btn">CONTACT US</button>
+        <div class="contact-info">
+            <p><strong>Phone Number:</strong> +923708090184</p>
+            <p><strong>Our Email:</strong> <a href="washi51214@gmail.com" target="_blank">washi51214</a></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
